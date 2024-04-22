@@ -36,6 +36,7 @@ public struct MessageComposeView: UIViewControllerRepresentable {
     
     public func makeUIViewController(context: Context) -> MFMessageComposeViewController {
         let composeVC = MFMessageComposeViewController()
+        composeVC.view.tintColor = UIColor(red: 0.365, green: 0.067, blue: 0.969, alpha: 1)
         composeVC.messageComposeDelegate = context.coordinator
         
         composeVC.recipients = initialMessageInfo.recipients
