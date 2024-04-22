@@ -31,8 +31,7 @@ public struct MailComposeView: UIViewControllerRepresentable {
     
     public func makeUIViewController(context: Context) -> MFMailComposeViewController {
         let composeVC = MFMailComposeViewController()
-        composeVC.view.tintColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
-        present(composeVC, animated: true, completion: nil)
+        composeVC.view.tintColor = UIColor(red: 0.365, green: 0.067, blue: 0.969, alpha: 1)
         composeVC.mailComposeDelegate = context.coordinator
         
         composeVC.setSubject(initialMailInfo.subject)
